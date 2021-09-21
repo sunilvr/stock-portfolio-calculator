@@ -15,16 +15,16 @@ function calculateProfitLoss(buyingPrice, numberOfStocks, sellingPrice){
 
   if (buyingPrice > sellingPrice){
     // loss scenario
-    loss = ((buyingPrice - sellingPrice) * numberOfStocks).toFixed(1);
-    lossPercentage = ((loss/(buyingPrice * numberOfStocks))*100).toFixed(2);
+    loss = parseInt((buyingPrice - sellingPrice) * numberOfStocks);
+    lossPercentage = parseInt((loss/(buyingPrice * numberOfStocks))*100);
     output.style.color = 'orange';
-    output.innerText = `loss is ${loss} and loss percentage is ${lossPercentage}`;
+    output.innerText = `loss is ${loss} and loss percentage is ${lossPercentage}%`;
   } else if (sellingPrice > buyingPrice){
     // profit scenario
-    profit = ((sellingPrice - buyingPrice) * numberOfStocks).toFixed(1);
-    profitPercentage = ((profit/(buyingPrice * numberOfStocks))*100).toFixed(2);
+    profit = parseInt((sellingPrice - buyingPrice) * numberOfStocks);
+    profitPercentage = parseInt((profit/(buyingPrice * numberOfStocks))*100);
     output.style.color = 'green';
-    output.innerText = `profit is ${profit} and profit percentage is ${profitPercentage}`;
+    output.innerText = `profit is ${profit} and profit percentage is ${profitPercentage}%`;
   } else{
     //no loss and no profit
     output.innerText = `no gain no pain`;
