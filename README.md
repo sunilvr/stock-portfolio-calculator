@@ -1,8 +1,11 @@
 # stock-portfolio-calculator
 An app that helps users to calculate their stock portfolios and respective performances
 
-# The calculation logic is customised and relevant explanation can be found below 
-# Note: The numbers are parsed to display Integer values just to make them more appleaing on the output
+
+# Note: 
+The calculation logic is customised and relevant explanation can be found below 
+The numbers are parsed to display Integer values just to make them more appleaing on the output.
+
 
 Profit calculation logic explanation:
   if the user has bought 10 stocks for 20 rupees each, and the current selling price of each stock is 28 rupees
