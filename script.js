@@ -4,12 +4,6 @@ const currentPrice = document.querySelector("#current-price");
 const calculateButton = document.querySelector("#submit-button");
 const output = document.querySelector("#output");
 
-
-/*Profit = (SellingPrice - CostPrice)
-Profit Percentage = (Profit/CostPrice)*100
-Loss = (CostPrice - SellingPrice)
-Loss Percentage = (Loss/CostPrice)*100*/
-
 function calculateProfitLoss(buyingPrice, numberOfStocks, sellingPrice){
   let profit = 0, profitPercentage = 0, loss = 0, lossPercentage = 0;
 
