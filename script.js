@@ -4,6 +4,12 @@ const currentPrice = document.querySelector("#current-price");
 const calculateButton = document.querySelector("#submit-button");
 const output = document.querySelector("#output");
 
+
+/*Profit = (SellingPrice - CostPrice)
+Profit Percentage = (Profit/CostPrice)*100
+Loss = (CostPrice - SellingPrice)
+Loss Percentage = (Loss/CostPrice)*100*/
+
 function calculateProfitLoss(buyingPrice, numberOfStocks, sellingPrice){
   let profit = 0, profitPercentage = 0, loss = 0, lossPercentage = 0;
 
@@ -11,7 +17,7 @@ function calculateProfitLoss(buyingPrice, numberOfStocks, sellingPrice){
     // loss scenario
     loss = parseInt((buyingPrice - sellingPrice) * numberOfStocks);
     lossPercentage = parseInt((loss/(buyingPrice * numberOfStocks))*100);
-    output.style.color = 'orange';
+    output.style.color = '#4F46E5';
     output.innerText = `loss is ${loss} and loss percentage is ${lossPercentage}%`;
   } else if (sellingPrice > buyingPrice){
     // profit scenario
