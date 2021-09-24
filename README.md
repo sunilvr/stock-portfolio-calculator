@@ -4,7 +4,7 @@ An app that helps users to calculate their stock portfolios and respective perfo
 
 # Note: 
 The calculation logic is customised and relevant explanation can be found below 
-The numbers are parsed to display Integer values just to make them more appleaing on the output.
+The numbers are parsed to display Integer values just to make them visually more appealing on the output.
 
 
 ## Custom Logic explanation: 
